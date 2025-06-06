@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentExam</class>
+ <widget class="QDialog" name="StudentExam">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Assigned Exams</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#StudentExam {
+        background-color: #fef6f0   ;
+        border: 1px solid black;
+        border-radius: 10%;
+}</string>
+  </property>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>581</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#titleLabel {
+        font-size: 25px;
+color: #2c3e50 ;
+}</string>
+   </property>
+   <property name="text">
+    <string>Assigned Exams for Class</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>711</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget#tableWidget {
+    border: 1.5px solid #2c3e50;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11pt;
+    color: #2c3e50;
+    gridline-color: #ecf0f1;
+    alternate-background-color: #f7f9fa;
+    selection-background-color: #d6eaf8;
+    selection-color: #1a252f;
+}
+
+QHeaderView::section {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 6px;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #2c3e50;
+    border: none;
+}
+
+QTableWidget::item {
+    padding: 8px 10px;
+    font-size: 9pt;
+}
+
+QTableWidget::item:selected {
+    background-color: #d6eaf8;
+    color: #1a252f;
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Class</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Subject</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Invigilator</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Exam Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Start Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>End Time</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Room</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
