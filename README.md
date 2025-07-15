@@ -8,7 +8,6 @@ This **School Management System** is a desktop application designed to streamlin
 ## Members / Contributors
 - **Sarim Khan**
 - **Maaz**
-- **Umer Pervez**
 - **Syed Muhammad Hunain**
 
 ---
